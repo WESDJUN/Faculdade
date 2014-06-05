@@ -1,0 +1,23 @@
+create database casa_bancaria;
+
+
+create table clientes
+(
+   codigo_cliente serial,
+   nome varchar (30) not null,
+   sobrenome varchar (40) not null,
+   data_nascimento date not null,
+   cpf varchar (11) not null,
+   rg varchar (11) not null,
+   sexo char (1),
+   tel_numero_fone integer not null,
+   tel_numero_celular integer,
+   end_rua varchar (50),
+   end_complementos varchar (30),
+   end_cep integer not null,
+   tipo: 1-2-3
+   constraint pk_clientes primary key (codigo_cliente)
+);
+
+
+
